@@ -159,7 +159,7 @@ The circuit takes a query by a verifier and a claim owned by the prover and gene
 
 1. Checks that the prover is owner of an identity by idOwnershipBySignature template
 2. Verifies that the identity is the subject of the claim
-3. Verifier that the claim is included in the issuer's claim tree
+3. Verifies that the claim is included in the issuer's claim tree
 4. Verifies that the claim schema matches the one in the query
 5. Verifies that the claim is not revoked by the issuer and is not expired
 6. Verifies that the query posed by the verifier is satisfied by the claim
@@ -175,7 +175,7 @@ The circuit takes a query by a verifier and a claim owned by the prover and gene
 
 This circuit should be used for smart contract verifiers. This circuits does all the checks that the the [credentialAtomicQueryMTPV2](https://github.com/iden3/docs/blob/master/mkdocs/docs/protocol/main-circuits.md#credentialatomicquerymtpv2) circuit does, plus the following:
 
-1. Check that prover controls the identity the same way as the AuthV2 circuit checks it
+1. Checks that prover controls the identity the same way as the AuthV2 circuit checks it
 2. Calculates hash of the query inputs, like claimSchema, slotIndex, operator, claimPathKey, claimPathNotExists and values as an output for all the query related inputs.
 This reduces the number of public inputs and much cheaper for Smart Contracts to verify the proof.
 
@@ -192,7 +192,7 @@ This circuit checks that an issuer has issued a claim for identity and validates
 
 1. Checks that the prover is owner of an identity by idOwnershipBySignature template
 2. Verifies that the identity is the subject of the claim
-3. Verifier that the claim was signed by the issuer
+3. Verifies that the claim was signed by the issuer
 4. Verifies that the claim schema matches the one in the query
 5. Verifies that the claim is not revoked by the issuer and is not expired
 6. Verifies that the query posed by the verifier is satisfied by the claim
