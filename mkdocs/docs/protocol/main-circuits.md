@@ -159,7 +159,7 @@ The circuit takes a query by a verifier and a claim owned by the prover and gene
 
 1. Checks that the prover is owner of an identity by idOwnershipBySignature template
 2. Verifies that the identity is the subject of the claim
-3. Verifier that the claim is included in the issuer's claim tree
+3. Verifies that the claim is included in the issuer's claim tree
 4. Verifies that the claim schema matches the one in the query
 5. Verifies that the claim is not revoked by the issuer and is not expired
 6. Verifies that the query posed by the verifier is satisfied by the claim
